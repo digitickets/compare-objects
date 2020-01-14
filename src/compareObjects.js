@@ -114,3 +114,8 @@ var compareObjects = function (a, b) {
 
     return compare(a, b);
 };
+
+/* istanbul ignore next */
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = compareObjects;
+}
